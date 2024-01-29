@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: quitiaquez_sebastian_coding_assignment11
+    image: quitiaquez_sebastian_coding_assignment11
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 7775:3000
